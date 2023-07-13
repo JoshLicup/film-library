@@ -1,0 +1,290 @@
+
+<html>
+<head>
+  <title>My Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+  <style>
+    body, ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #000000 !important;
+    }
+    
+  
+    .background-container {
+      position: relative;
+      height: 300px;
+    }
+
+    .background-image {
+      background-image: url("https://i.pinimg.com/564x/1b/c8/b3/1bc8b388bf4aab97c4fee3e48e1cfc76.jpg");
+      background-size: cover;
+      background-position: center;
+      background-color: transparent;
+      height: 100%;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .overlay-text {
+      color: #ffffff;
+      font-size: 48px;
+      font-family: "AccoladeSerial", Arial, sans-serif;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+    }
+
+    
+    .navbar {
+      background-color: transparent;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    .navbar ul li {
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar ul li:last-child {
+      margin-right: 0;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      padding: 10px;
+      font-family: "Vogue", serif;
+      font-weight: bold;
+      font-size: 24px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    .navbar ul li a:hover {
+      background-color: #ffffff;
+    }
+
+    
+    .navbar ul li:nth-child(2) a {
+      position: relative;
+    }
+
+    .navbar ul li:nth-child(2) a::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: rgb(0, 0, 0);
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .navbar ul li:nth-child(2) a:hover::after {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+
+    .content {
+      text-align: center;
+      margin-top: -30px; 
+    }
+
+    h1 {
+      font-family: "AccoladeSerial", Arial, sans-serif;
+      background-color: #ffffff;
+      padding: 10px;
+      color: rgb(0, 0, 0);
+    }
+
+    .research-box {
+      background-color: transparent; 
+      padding: 22px;
+      margin-top: 20px;
+      border: px solid #ccc;
+      border-radius: 5px;
+      text-align: left;
+    }
+
+    .research-box p {
+      font-size: 20px;
+      color: white;
+      font-family: "Jack Input", sans-serif;
+      margin: 0; 
+      padding: 0; 
+      background-color: transparent; 
+    }
+
+   
+    .custom-card {
+      background-color: #000000;
+      color: #ffffff;
+    }
+    
+    
+    .quote {
+      text-align: center;
+      color: #ffffff;
+      font-size: 24px;
+      font-family: "Jack Input", sans-serif;
+    }
+
+    
+    .card-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .card-row .card {
+      margin: 10px;
+    }
+
+    .custom-image {
+      width: 1080px;
+      height: 1080px;
+      margin: 0 auto;
+    }
+
+    .custom-text {
+      font-family: "Your Custom Font", sans-serif;
+      font-size: 24px;
+      color: #ffffff;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-container">
+    <div class="background-image"></div>
+    <div class="overlay">
+      <h1 class="overlay-text">The Film</h1>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="camera-angles.html">Camera Angles</a></li>
+        <li><a href="genres.html" class="active">Genres</a></li>
+        <li><a href="members.html">Members</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="content">
+ 
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner px-0">
+        <div class="carousel-item active">
+          <img src="2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="SCREENING (1).png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="SCREENING.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="Untitled design (2).png" alt="Custom Image" class="custom-image mb-0" style="width: 500px; height: 500px;">
+          <h2 style="color: white;">What is film?</h2>
+          <p class="custom-text ml-3" style="font-size: 16px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">A film, typically referred to as a movie or a motion picture, is a type of visual storytelling that combines<br>moving pictures, sound, and occasionally other sensory aspects to tell a story or communicate an artistic<br>idea. It has been a widely used form of communication, education, and entertainment<br>for more than a century</p>
+        </div>
+        <div class="col">
+          <img src="Untitled design (2).png" alt="Custom Image" class="custom-image mb-0" style="width: 500px; height: 500px;">
+          <h2 style="color: white;">What is Genre?</h2>
+          <p class="custom-text ml-3" style="font-size: 16px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Movie genres are stylistic categories where a particular movie can be placed 
+            based on the setting,<br>
+            characters, plot, mood, tone, and theme. A film's main genre category will be based on where the majority of the content lands. A sub-genre is a smaller category that fits inside
+             a particular genre. Often this is a mixture<br>
+              of two separate genres. Genres and sub-genres<br> 
+              change over time and are informed by one another.<br>
+              you can check it out in the "genres" at the navbar</p>
+        </div>       
+      </div>
+    </div>
+    
+    <div class="research-box">
+      <h2 class="quote" style="font-family: Georgia, 'Times New Roman', Times, serif;">Upcoming Movies</h2>
+    </div>    
+    
+    <div class="card-row">
+      <div class="card custom-card" style="width: 18rem;">
+        <img src="https://i.pinimg.com/564x/16/ba/19/16ba1902241157adb344fa7f09d37ee6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Five Nights at Freddy's</h5>
+          <p class="card-text">A troubled security guard begins working at Freddy Fazbear's Pizzeria. While spending his first night on the job, he realizes the late shift at Freddy's won't be so easy to make it through</p>
+          <a href="https://en.wikipedia.org/wiki/Five_Nights_at_Freddy%27s_(film)" class="btn btn-primary">More Details</a>
+        </div>
+      </div>
+      <div class="card custom-card" style="width: 15rem;">
+        <img src="https://i.pinimg.com/564x/51/08/f1/5108f193fa012d5ca5508321cb8489c6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Barbie</h5>
+          <p class="card-text">Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans</p>
+          <a href="https://en.wikipedia.org/wiki/Barbie_(film)" class="btn btn-primary">More Details</a>
+        </div>
+      </div>
+      <div class="card custom-card" style="width: 15rem;">
+        <img src="https://i.pinimg.com/564x/54/50/4b/54504bc0d8bc1d0b760a698030edd97a.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Meg 2: The Trench</h5>
+          <p class="card-text">Jonas Taylor leads a research team on an exploratory dive into the deepest depths of the ocean. Their voyage spirals into chaos when a malevolent mining operation threatens their mission and forces them into a high-stakes battle for survival</p>
+          <a href="https://en.wikipedia.org/wiki/Meg_2:_The_Trench" class="btn btn-primary">More Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p>@Made By Josh Miguel C.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>

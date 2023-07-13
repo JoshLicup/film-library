@@ -1,0 +1,149 @@
+
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff !important;
+}
+
+nav {
+  background-color: #272727;
+  height: 55px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+  font-family: "Vogue", serif;
+  font-weight: bold;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul li a:hover {
+  background-color: #b9a4a4;
+}
+
+.content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+  h1 {
+    background-color: #ffffff;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+  }
+  
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    display: inline;
+  }
+
+  nav li a {
+    display: inline-block;
+    padding: 8px;
+    text-decoration: none;
+  }
+
+  .logo-img {
+    width: 50px;
+    height: 30px;
+    margin-right: 15px;
+  }
+  
+  .logo-container {
+    margin-right: 20px;
+  }
+}
+h1 {
+  background-color: #FDCEDF;
+  padding: 10px;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  display: inline-block;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+
+nav ul li:nth-child(2) {
+  margin-right: 20px;
+}
+.research-box p {
+  font-size: 16px;
+  .card {
+    flex: 0 0 calc(20% - 20px);
+    margin: 10px;
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    color: white;
+  }
+  
+  .card-body {
+    text-align: center;
+    color: black;
+  }
+  
+}
